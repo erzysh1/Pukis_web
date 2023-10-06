@@ -420,17 +420,32 @@ footer a:active {
 /* Footer Copyright End */
 
 
+/* Credits */
+.credits {
+  display: flex;
+  position: relative;
+}
+
+.credits credit {
+  display: flex;
+  width: 88%;
+  height: 100%;
+  position: absolute;
+  right: 0;
+}
+/* Credits End */
+
 /* Media Queries */
 
 /* PC */
-@media (max-width: 1920px) {
+@media (width > 1920px) {
   nav .button a {
     font-size: 1.35rem;
   }
 }
 
 /* Mobile */
-@media (max-width: 768px) {
+@media (width < 768px) {
   span.menubar {
     visibility: visible;
     cursor: pointer;

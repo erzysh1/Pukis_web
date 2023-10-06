@@ -424,15 +424,33 @@ footer a:active {
 .credits {
   display: flex;
   position: relative;
+  flex-wrap: wrap;
 }
 
 .credits credit {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  /* display: flex; */
   width: 88%;
   height: 100%;
   position: absolute;
   right: 0;
 }
+
+credit h1 {
+  font-family: catchy;
+  font-size: clamp(2rem, 5vmax, 5rem);
+  font-weight: 100;
+  letter-spacing: 1px;
+  margin-right: 100px;
+}
+
+credit thank {
+  height: max-content;
+}
+
+
 /* Credits End */
 
 /* Media Queries */

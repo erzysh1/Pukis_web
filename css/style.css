@@ -479,7 +479,17 @@ credit .members {
   grid-area: m;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: fit-content 1fr 1fr;
+  grid-template-rows: 50px 1fr 1fr;
+  grid-template-areas:
+    "h h"
+    "m1 m2"
+    "m1 m2";
+  text-align: center;
+}
+
+credit .members h2 {
+  width: 100%;
+  grid-area: h;
 }
 
 /* Credits End */

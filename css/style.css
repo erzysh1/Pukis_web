@@ -473,6 +473,27 @@ credit fasili p {
 
 credit social {
   grid-area: s;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "m1 m2";
+  position: relative;
+}
+
+credit social svg {
+  position: absolute;
+}
+
+credit social .ig1 {
+  grid-area: m1;
+}
+
+credit social .ig2 {
+  grid-area: m2;
+}
+
+credit social a {
+  width: 100%;
 }
 
 credit .members {

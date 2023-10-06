@@ -430,7 +430,10 @@ footer a:active {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
-  /* display: flex; */
+  grid-template-areas:
+    "h t t"
+    "f s s"
+    "m m m";
   width: 88%;
   height: 100%;
   position: absolute;
@@ -443,14 +446,17 @@ credit h1 {
   font-weight: 100;
   letter-spacing: 1px;
   margin-right: 100px;
+  grid-area: h;
 }
 
 credit thank {
+  grid-area: t;
   height: max-content;
 }
 
 credit fasili {
   text-align: center;
+  grid-area: f;
 }
 
 credit fasili h3 {
@@ -463,6 +469,17 @@ credit fasili p {
   font-family: "Cardo";
   font-weight: 100;
   font-size: 1rem;
+}
+
+credit social {
+  grid-area: s;
+}
+
+credit .members {
+  grid-area: m;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: fit-content 1fr 1fr;
 }
 
 /* Credits End */

@@ -484,6 +484,11 @@ credit social svg {
   position: absolute;
 }
 
+credit social div {
+  display: flex;
+  flex-direction: column;
+  gap: 10%;
+}
 credit social .ig1 {
   grid-area: m1;
 }
@@ -492,8 +497,9 @@ credit social .ig2 {
   grid-area: m2;
 }
 
-credit social a {
+credit social div a {
   width: 100%;
+  font-size: 1.4rem;
 }
 
 credit .members {
